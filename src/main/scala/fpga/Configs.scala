@@ -22,9 +22,9 @@ class BaseConfig extends Config(
   new BaseSubsystemConfig()
 )
 
-class CacheConfig extends Config(  // 32 KiB SRAM
-  new WithL1ICacheSets(256) ++
-  new WithL1DCacheSets(256) ++
+class CacheConfig extends Config(  // 4 KiB SRAM
+  new WithL1ICacheSets(32) ++
+  new WithL1DCacheSets(32) ++
   new WithL1ICacheWays(4) ++
   new WithL1DCacheWays(4) ++
   new WithCacheBlockBytes(64)
@@ -51,16 +51,21 @@ class DefaultRV32FPGAConfig extends Config(
 )
 
 class RV32WithoutFPUFPGAConfig extends Config(
-  new DefaultRV32FPGAConfig ++
-  new WithoutFPU
+  new WithRV32 ++
+  new WithoutFPU ++ 
+  new DefaultFPGAConfig
 )
 
 class RV32CacheFPGAConfig extends Config(
-  new DefaultRV32FPGAConfig ++
-  new CacheConfig
+  new WithRV32 ++
+  new CacheConfig ++
+  new DefaultFPGAConfig
 )
 
 class RV32WithoutFPUCacheFPGAConfig extends Config(
-  new RV32WithoutFPUFPGAConfig ++
-  new CacheConfig
+  new WithRV32 ++
+  new WithoutFPU ++ 
+  new CacheConfig ++
+  new WithNTrackersPerBank(1) ++
+  new DefaultFPGAConfig
 )

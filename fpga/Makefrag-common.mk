@@ -6,7 +6,7 @@ endif
 MODEL ?= Top
 PROJECT ?= sunic.fpga
 CFG_PROJECT ?= $(PROJECT)
-CONFIG ?= DefaultRV32FPGAConfig
+CONFIG ?= RV32WithoutFPUCacheFPGAConfig
 # TODO: For now must match rocketchip.Generator
 long_name = $(PROJECT).$(CONFIG)
 
