@@ -1,7 +1,7 @@
 // See LICENSE.Berkeley for license details.
 // See LICENSE.SiFive for license details.
 
-package sunic.fpga
+package rocketchip.fpga
 
 import scala.collection.mutable.LinkedHashSet
 

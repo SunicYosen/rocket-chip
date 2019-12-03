@@ -4,7 +4,7 @@ $(error Please set environment variable RISCV. Please take a look at README)
 endif
 
 MODEL ?= Top
-PROJECT ?= sunic.fpga
+PROJECT ?= rocketchip.fpga
 CFG_PROJECT ?= $(PROJECT)
 CONFIG ?= RV32WithoutFPUCacheFPGAConfig
 # TODO: For now must match rocketchip.Generator

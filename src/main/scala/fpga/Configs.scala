@@ -1,7 +1,7 @@
 // See LICENSE.SiFive for license details.
 // See LICENSE.Berkeley for license details.
 
-package sunic.fpga
+package rocketchip.fpga
 
 import Chisel._
 import freechips.rocketchip.config.Config

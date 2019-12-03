@@ -1,6 +1,6 @@
 // Design by sunic
 
-package sunic.fpga
+package rocketchip.fpga
 
 import Chisel._
 import freechips.rocketchip.config.Parameters

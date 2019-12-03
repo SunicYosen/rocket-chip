@@ -1,6 +1,6 @@
 // Sunic FPGA Generator
 
-package sunic.fpga
+package rocketchip.fpga
 
 import freechips.rocketchip.subsystem.RocketTilesKey
 import freechips.rocketchip.tile.XLen
