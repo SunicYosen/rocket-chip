@@ -1,6 +1,6 @@
 // See LICENSE.SiFive for license details.
 
-package freechips.rocketchip.system // TODO this should really be in a testharness package
+package freechips.rocketchip.calab // TODO this should really be in a testharness package
 
 import chisel3._
 import freechips.rocketchip.amba.axi4._
