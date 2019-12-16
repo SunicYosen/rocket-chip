@@ -24,7 +24,7 @@ include $(sim_dir)/Makefrag.mk
 ifneq ($(filter run% %.run %.out %.vpd %.vcd,$(MAKECMDGOALS)),)
 -include $(generated_dir)/$(long_name).d
 endif
-include $(base_dir)/fpga/Makefrag-verilog.mk
+include $(base_dir)/calab/Makefrag-verilog.mk
 
 all: $(simv)
 debug: $(simv_debug)

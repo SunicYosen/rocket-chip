@@ -4,9 +4,9 @@ $(error Please set environment variable RISCV. Please take a look at README)
 endif
 
 MODEL ?= Top
-PROJECT ?= rocketchip.fpga
+PROJECT ?= rocketchip.calab
 CFG_PROJECT ?= $(PROJECT)
-CONFIG ?= RV32WithoutFPUCacheFPGAConfig
+CONFIG ?= MyLab1Config
 # TODO: For now must match rocketchip.Generator
 long_name = $(PROJECT).$(CONFIG)
 

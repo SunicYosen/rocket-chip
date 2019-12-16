@@ -1,6 +1,6 @@
 // See LICENSE.SiFive for license details.
 
-package freechips.rocketchip.calab
+package rocketchip.calab
 
 import Chisel._
 import freechips.rocketchip.config.Parameters
