@@ -75,8 +75,15 @@ class MMIOPortOnlyConfig extends Config(
 class BaseFPGAConfig extends Config(new BaseConfig)
 class DefaultFPGAConfig extends Config(new WithNSmallCores(1) ++ new BaseFPGAConfig)
 
-// My Lab1 Config
-class MyLab1Config extends Config(
+// Lab1 Config
+class Lab1Config extends Config(
+  new WithExtMemSize(0x00001000) ++
+  new WithRV32 ++
+  new DefaultConfig
+)
+
+// Lab2 Config
+class Lab2Config extends Config(
   new WithExtMemSize(0x00001000) ++
   new WithRV32 ++
   new DefaultConfig
